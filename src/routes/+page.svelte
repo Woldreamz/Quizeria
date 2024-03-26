@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<!--{
+    "compilerOptions": {
+      //...
+      "resolveJsonModule": true
+    }
+  }-->
+  
+<script lang="ts">
+    import quizzes from "../data.json"
+    import Card from "../components/Card.svelte"
+    
+</script>
+
+{#each quizzes as quiz (quiz.id)}
+  <Card {quiz}/>
+{/each}
+
