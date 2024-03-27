@@ -1,6 +1,6 @@
 <script lang="ts">
     import * as images from "../image";
-    import {goto} from "$app/navigation";
+    import { goto } from "$app/navigation";
 
     interface Quiz {
         id: number;
@@ -10,7 +10,7 @@
             id: number, 
             text: string, 
             answer: string;
-            options: {id: number, text: string; label: string}[];
+            options: { id: number, text: string; label: string }[];
         }[];
     }
 
@@ -31,3 +31,4 @@
         <p>{quiz.questions.length}5 questions</p>
     </div>
 </button>
+
